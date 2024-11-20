@@ -1,0 +1,254 @@
+<html>
+<html>
+<head>
+    <title>NAYSA STORE</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif; /* Font yang lebih vintage */
+            background: linear-gradient(to bottom, #f3e5ab, #d5b3b3); /* Gradasi vintage */
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #8d6e63; /* Warna latar belakang header */
+            color: #ffffff; /* Warna tulisan header */
+            position: relative;
+        }
+
+        .menu-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        .menu {
+            display: none; /* Tersembunyi secara default */
+            position: absolute;
+            right: 20px;
+            top: 60px;
+            background-color: #ffffff; /* Warna latar belakang menu */
+            padding: 10px;
+            width: 150px;
+            z-index: 1000; /* Menjaga menu di atas elemen lain */
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #8d6e63; /* Warna tulisan menu */
+        }
+
+        .store-name {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        .store-tagline {
+            font-size: 14px;
+            color: #ffe0b2; /* Warna tulisan tagline */
+        }
+
+        .store-description {
+            text-align: center;
+            font-size: 18px; /* Ukuran font deskripsi */
+            color: #4e342e; /* Warna deskripsi */
+            margin: 10px 20px; /* Margin atas dan bawah */
+            padding: 10px;
+            background-color: #ffffff; /* Latar belakang deskripsi */
+            border-radius: 8px; /* Sudut melengkung */
+         
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 30px; /* Ukuran font lebih besar */
+            color: #6d4c41; /* Warna vintage */
+            margin: 20px 0;
+           
+        }
+
+        .bestseller-title {
+            font-size: 36px; /* Ukuran font */
+            color: #6d4c41; /* Warna vintage */
+            margin: 20px 0;
+            text-align: left; /* Rata kiri */
+            padding: 10px;
+            border-left: 5px solid #ffab40; /* Hiasan garis di kiri */
+           
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: #ffffff; /* Warna latar belakang kotak produk */
+            border: 1px solid #d0d0d0; /* Warna batas kotak produk */
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px; /* Sudut kotak produk melengkung */
+          
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Sudut gambar produk melengkung */
+        }
+
+        .buy-button {
+            background-color: #ffab40; /* Warna tombol beli */
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px; /* Sudut tombol melengkung */
+        }
+
+        .buy-button:hover {
+            background-color: #e68a00; /* Warna tombol saat hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="store-name">NAYSA STORE</div>
+        <div class="store-tagline">Exclusive Finds, Just for You</div>
+        <div class="menu" id="menu">
+            <a href="berandazuliasstore.html">Beranda</a>
+            <a href="produk.html#">Produk</a>
+            <a href="pembayaran.html">Pembayaran</a>
+            <a href="help.html">Help</a>
+        </div>
+    </div>
+
+    <div class="bestseller-title">PRODUK</div>
+
+   <div class="product-grid">
+   <div class="product">
+            <img src="Buku The Psychology of Money - Morgan Housel Hard Cover.jpg" alt="Produk 1">
+            <div class="product_name">Buku The Psychology of Money - Morgan Housel Hard Cover</div>
+            <div class="product-price">Rp 102.999</div>
+            <a href="pembayaran.html ">
+            <button class="buy-button">Beli</button>
+</a>
+
+</div>
+        <div class="product">
+            <img src="Buku The Power of Personality - By Tara Damaya.jpg" alt="Produk 2">
+            <div class="product_name">Buku The Power of Personality - By Tara Damaya</div>
+            <div class="product-price">Rp 153.999</div>
+            <a href="pembayaran.html ">
+            <button class="buy-button">Beli</button>
+</a>
+        </div>
+        <div class="product">
+            <img src="Buku How Leader Act - By Aswin Giandra.jpg" alt="Produk 3">
+            <div class="product_name">Buku How Leader Act - By Aswin Giandra</div>
+            <div class="product-price">Rp 189.999</div>
+            <a href="pembayaran.html ">
+            <button class="buy-button">Beli</button>
+</a>
+        </div>
+        <div class="product">
+            <img src="Buku Control Your Attitude - By Kayla Malatika.jpg" alt="Produk 4">
+            <div class="product_name">Buku Control Your Attitude - By Kayla Malatika</div>
+            <div class="product-price">Rp 150.999</div>
+            <a href="pembayaran.html ">
+            <button class="buy-button">Beli</button>
+</a>
+        </div>
+        <div class="product">
+            <img src="Buku The Mind & The Brain - By Alfred Binet.jpg" alt="Produk 5">
+            <div class="product_name">Buku The Mind & The Brain - By Alfred Binet</div>
+            <div class="product-price">Rp 276.999</div>
+            <a href="pembayaran.html ">
+            <button class="buy-button">Beli</button>
+</a>
+        </div>
+        <div class="product">
+            <img src="Buku A General Introduction To Psychoanalysis - By Sigmund Freud.jpg" alt="Produk 6">
+            <div class="product_name">Buku A General Introduction To Psychoanalysis - By Sigmund Freud</div>
+            <div class="product-price">Rp 125.000</div>
+            <a href="pembayaran.html ">
+            <button class="buy-button">Beli</button>
+</a>
+        </div>
+        <div class="product">
+            <img src="Buku Psychology of Emotions - By David J. Lieberman.jpg" alt="Produk 7">
+            <div class="product_name">Buku Psychology of Emotions - By David J. Lieberman</div>
+            <div class="product-price">Rp 453.999</div>
+            <a href="pembayaran.html ">
+            <button class="buy-button">Beli</button>
+</a>
+        </div>
+        <div class="product">
+            <img src="Buku Filosofi Menikmati Hidup - By Katla Malatika.jpg" alt="Produk 8">
+            <div class="product_name">Buku Filosofi Menikmati Hidup - By Katla Malatika</div>
+            <div class="product-price">Rp 320.000</div>
+            <button class="buy-button">Beli</button>
+            <a href="pembayaran.html ">
+</a>
+        </div>
+        <div class="product">
+            <img src="Buku Sejarah Filsafat Barat - By Betrand Russell.jpg" alt="Produk 9">
+            <div class="product_name">Buku Sejarah Filsafat Barat - By Betrand Russell</div>
+            <div class="product-price">Rp 300.999</div>
+            <button class="buy-button">Beli</button>
+            <a href="pembayaran.html ">
+</a>
+        </div>
+        <div class="product">
+            <img src="Buku The Art of Manipulation - By R. D. Asti.jpg" alt="Produk 10">
+            <div class="product_name">Buku The Art of Manipulation - By R. D. Asti</div>
+            <div class="product-price">Rp 1450.000</div>
+            <button class="buy-button">Beli</button>
+            <a href="pembayaran.html ">
+</a>
+        </div>      
+        <div class="product">
+            <img src="Buku Retorika - By Aristoteles.jpg" alt="Produk 11">
+            <div class="product_name">Buku Retorika - By Aristoteles</div>
+            <div class="product-price">Rp 199.999</div>
+            <button class="buy-button">Beli</button>
+            <a href="pembayaran.html ">
+</a>
+        </div>
+        <div class="product">
+            <img src="Buku Seni Mengenal Diri Sendiri - By Brian Adam.jpg" alt="Produk 12">
+            <div class="product_name">Buku Seni Mengenal Diri Sendiri - By Brian Adam</div>
+            <div class="product-price">Rp 550.000</div>
+            <button class="buy-button">Beli</button>
+            <a href="pembayaran.html ">
+</a>
+        </div>        
+     
+   </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            // Toggle menu visibility
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+

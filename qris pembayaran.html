@@ -1,0 +1,129 @@
+<html>
+<html>
+<head>
+    <title>NAYSA STORE</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif; /* Font yang lebih vintage */
+            background: linear-gradient(to bottom, #f3e5ab, #d5b3b3); /* Gradasi vintage */
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #8d6e63; /* Warna latar belakang header */
+            color: #ffffff; /* Warna tulisan header */
+            position: relative;
+        }
+
+        .menu-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        .menu {
+            display: none; /* Tersembunyi secara default */
+            position: absolute;
+            right: 20px;
+            top: 60px;
+            background-color: #ffffff; /* Warna latar belakang menu */
+            padding: 10px;
+            width: 150px;
+            z-index: 1000; /* Menjaga menu di atas elemen lain */
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #8d6e63; /* Warna tulisan menu */
+        }
+
+        .store-name {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        .store-tagline {
+            font-size: 14px;
+            color: #ffe0b2; /* Warna tulisan tagline */
+        }
+
+
+        .main-title {
+            text-align: center;
+            font-size: 30px; /* Ukuran font lebih besar */
+            color: #6d4c41; /* Warna vintage */
+            margin: 20px 0;
+           
+        }
+
+        .bestseller-title {
+            font-size: 36px; /* Ukuran font */
+            color: #6d4c41; /* Warna vintage */
+            margin: 20px 0;
+            text-align: left; /* Rata kiri */
+            padding: 10px;
+            border-left: 5px solid #ffab40; /* Hiasan garis di kiri */
+           
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="store-name">NAYSA STORE</div>
+        <div class="store-tagline">Exclusive Finds, Just for You</div>
+        <div class="menu" id="menu">
+            <a href="berandazuliasstore.html">Beranda</a>
+            <a href="produk.html#">Produk</a>
+            <a href="pembayaran.html">Pembayaran</a>
+            <a href="help.html">Help</a>
+        </div>
+    </div>
+
+    <div class="bestseller-title">KODE PEMBAYARAN</div>
+
+    <h3>SILAHKAN SCAN KODE INI UNTUK PEMBAYARAN</h3>
+    
+    <img src="QR.jpeg" alt="kode pembayaran ">
+            
+
+</div>          
+    
+
+
+</html>
+
+   </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            // Toggle menu visibility
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
